@@ -1,0 +1,300 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load embed_video_tags %}
+
+
+
+{% block content %}
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h1 data-aos="fade-up">Grow your business with REDSHIFT</h1>
+          <h2 data-aos="fade-up" data-aos-delay="400">We are team of talanted designers making websites with Bootstrap</h2>
+          <div data-aos="fade-up" data-aos-delay="800">
+            <a href="#about" class="btn-get-started scrollto">Get Started</a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">
+          <img src="{% static 'img/unnamed.png' %}" class="img-fluid animated" alt="" >
+        </div>
+      </div>
+    </div>
+
+
+
+  </section>
+
+  <!-- End Hero -->
+
+
+      <!-- ======= Services Section ======= -->
+<section id="services" class="services">
+  <div class="container">
+
+    <div class="section-title" data-aos="fade-up">
+      <h2 >Services</h2>
+      <hr>
+      <p>Magnam dolores commodi suscipit eius consequatur ex aliquid fug</p>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+        <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+          <div class="icon"><i class="fas fa-laptop"></i></div>
+          <h4 class="title"><a href="">Web Development</a></h4>
+          <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+        <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+          <div class="icon"><i class="fas fa-laptop"></i></div>
+          <h4 class="title"><a href="">RPA Develepment</a></h4>
+          <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+        <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+          <div class="icon"><i class="fas fa-laptop"></i></div>
+          <h4 class="title"><a href="">Motion Graphics</a></h4>
+          <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+        <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+          <div class="icon"><i class="fas fa-laptop"></i></div>
+          <h4 class="title"><a href="">ML/AI Solutions</a></h4>
+          <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- End Services Section -->
+
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Portfolio</h2>
+          <hr>
+          <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem</p> -->
+        </div>
+
+
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="400">
+          <!-- <img src="static/img/banner1.jpg" alt=""> -->
+
+
+
+
+
+
+{% for i in portfolio %}
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+
+              <div class="embed-responsive embed-responsive-16by9">
+
+                <iframe src="static/img/Michael VO.mp4" width="80%" height="" auto></iframe>
+                <iframe src="static/img/Michael VO.mp4" width="" height=""></iframe>
+                <iframe src="static/img/Michael VO.mp4" width="" height=""></iframe>
+                <iframe src="static/img/Michael VO.mp4" width="" height=""></iframe>
+
+
+                <!-- {% video i.video 'medium' %}{ -->
+
+                <!-- {% video i.video 'small' %}
+                {% video portfolio.video as my_video %}
+                  URL: {{ my_video.url }}
+                  Thumbnail: {{ my_video.thumbnail }}
+                  {% video my_video "large" %}
+
+                {% endvideo %}
+ -->
+
+                </div>
+                <div class="member-info">
+                  <h3 class="text-secodery"> Title: {{i.title}}</h3>
+                  <span>Price: ${{i.price}}</span>
+                </div>
+              </div>
+
+              {% endfor %}
+              </div>
+            </div>
+          </section>
+
+<!-- End Portfolio Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Team</h2>
+          <hr>
+          <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="100">
+              <div class="member-img">
+                <img src="{% static 'img/Team.jpg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="icofont-twitter"></i></a>
+                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href=""><i class="icofont-instagram"></i></a>
+                  <a href=""><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="200">
+              <div class="member-img">
+                <img src="{% static 'img/Team.jpg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="icofont-twitter"></i></a>
+                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href=""><i class="icofont-instagram"></i></a>
+                  <a href=""><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="member-img">
+                <img src="{% static 'img/Team.jpg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="icofont-twitter"></i></a>
+                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href=""><i class="icofont-instagram"></i></a>
+                  <a href=""><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>William Anderson</h4>
+                <span>CTO</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="fade-up" data-aos-delay="400">
+              <div class="member-img">
+                <img src="{% static 'img/Team.jpg' %}" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="icofont-twitter"></i></a>
+                  <a href=""><i class="icofont-facebook"></i></a>
+                  <a href=""><i class="icofont-instagram"></i></a>
+                  <a href=""><i class="icofont-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Amanda Jepson</h4>
+                <span>Accountant</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+      <!-- ======= Pricing Section ======= -->
+<section id="pricing" class="pricing">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Pricing</h2>
+      <hr>
+      <p>Our woderful Pricing</p>
+    </div>
+
+    <div class="row">
+
+      <div class="col-lg-4 col-md-6">
+        <div class="box" data-aos="zoom-in-right" data-aos-delay="200">
+          <h3>Basic</h3>
+          <h4><sup>$</sup>95<span></span></h4>
+          <ul>
+            <li>2D Clean logo animation</li>
+            <li>1080p HD</li>
+            <li>Baground Music</li>
+            <li class="na"></li>
+            <li class="na"></li>
+          </ul>
+          <div class="btn-wrap">
+            <a href="#" class="btn-buy">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
+        <div class="box recommended" data-aos="zoom-in" data-aos-delay="100">
+          <h3>Standard</h3>
+          <h4><sup>$</sup>165<span></span></h4>
+          <ul>
+            <li>Eye catching animation</li>
+            <li>Extra elements and effects</li>
+            <li>1080p HD </li>
+            <li>Background  music</li>
+            <li class="na"></li>
+          </ul>
+          <div class="btn-wrap">
+            <a href="#" class="btn-buy">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+        <div class="box" data-aos="zoom-in-left" data-aos-delay="200">
+          <h3>Premium</h3>
+          <h4><sup>$</sup>295<span></span></h4>
+          <ul>
+            <li>Complex Character animation</li>
+            <li>Extra elements and effects</li>
+            <li>1080p</li>
+            <li>Sound Effects</li>
+            <li>Background Music</li>
+          </ul>
+          <div class="btn-wrap">
+            <a href="#" class="btn-buy">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section><!-- End Pricing Section -->
+
+
+{% endblock %}

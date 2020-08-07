@@ -1,0 +1,118 @@
+Tile OF the App
+- Who we are(About), Contact Us, Pn- n0/email  fb,tw,li,fiv,up
+
+Front Pages
+----------------
+ - Home
+ - Web
+ - RPA
+ - MG
+ - ML/Al
+ - Login
+ - Dashboard(Inquiries)
+
+
+Design Specs
+---------------
+
+ - Use company Logo(Frntend and Admin)
+ - Branding colors - #---- #---
+ - Mobile Friendly
+ - Scial media icons & contact info
+ - Doesn't have to be too fancy but must be clean
+ 
+
+Functionality SPECS
+----------------------
+- Manage listings, Realtors, Contact inquiries and website user via admin
+- Role based users (staff and non-staff)
+ - Display listings in app with pagination
+ - Ablity to set listings to unpublished
+- Search listings by keyword, city, state,bedrooms and price(Home page and search page)
+- List realtors on about page with seller "seller of the month"(control via admin)
+ - Listing page should have fields listing below
+- Listing page should have 5 images with lightbox
+- Lightbox shuld scroll through images
+- Listing page should have a form to submit inquiry for that property listing
+- From info should go to database and notify reqaltors with an email
+- Frntend register/login to track inquiries
+- Both unregistered and registered user can submit form. if registered, can only submit one per listing.
+
+
+listing page fields
+-------------------
+-Title
+-Address, city, state, zip
+-Price
+-Bedrooms
+-Bathrooms
+-Square feet
+-Lot Size
+-Garage
+- Listing Date
+- Realtor - Name and image
+- Main image and 5 other images 
+
+Possible Future functionality
+-------------------------------
+-Google map on listing page
+- Buyer testimonials
+
+
+
+DataBase Schemas
+-----------------
+MODEL/DB FIELDS
+
+### LISTING
+id: INT
+realtor INT - (FOREIGN KEY [reoltor])
+title: STR
+address : STR
+city: STR
+state : STR
+zipcode: STR
+description: TEXT
+price: INT
+bedrooms: INT
+bathrooms: INT
+garage: INT [0]
+sqft: INT
+lot_size: FLOAT
+is_published:BOOL [true]
+list_date : DATE
+photo_main : STR
+photo_1:STR
+photo_2:STR
+photo_3:STR
+photo_4:STR
+photo_5:STR
+photo_6:STR
+
+
+
+### REALTOR
+id:INT
+name:STR
+photo:STR
+description:TEXT
+email:STR
+phone:STR
+is_mvp: BOOL [0]
+hire_date:DATE
+
+
+
+### CONTACT
+id:INT
+usrer_is:INT
+listing:INT
+listing_id:INT
+name:STR
+email:STR
+phone:STR
+message:TEXT
+contact_date:DATE
+
+
+
