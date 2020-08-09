@@ -12,3 +12,14 @@ def index(request):
 
 def about(request):
     return render(request, 'pages/about.html')
+
+def contact(request):
+    return render(request, 'pages/contact_us.html')
+
+
+def portfolio(request):
+    portfolio = Portfolio.objects.all()
+    context = {
+        'portfolio': portfolio
+    }
+    return render(request, 'pages/portfolio.html',context)

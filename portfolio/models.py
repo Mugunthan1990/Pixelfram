@@ -9,7 +9,8 @@ class Portfolio(models.Model):
     # portfolio = models.Foreignkey(Portfolio, on_delete=models.DO_NOTHING)
     title = models.CharField(max_length=200)
     description = models.TextField(blank=True)
-    video = EmbedVideoField()
+    # video = EmbedVideoField()
+    videofile= models.FileField(upload_to='img/', null=True, verbose_name="")
     price = models.IntegerField()
     is_published =models.BooleanField(default=True)
     def __str__(self):

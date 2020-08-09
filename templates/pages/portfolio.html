@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load embed_video_tags %}
+
+
+
+{% block content %}
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Portfolio</h2>
+          <hr>
+          <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem</p> -->
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="400">
+          <!-- <img src="static/img/banner1.jpg" alt=""> -->
+
+          <!-- <video controls style="width:640px;height:360px;" poster="poster.png">
+            <source src="{% static 'img\Logo_gif.webm' %}"
+                    type='video/webm;codecs="vp8, vorbis"' />
+          </video> -->
+
+
+
+
+{% for i in portfolio %}
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+
+              <div class="embed-responsive embed-responsive-16by9">
+
+                <!-- <iframe src="{% static 'static/img/Michael VO.mp4' %}" width="80%" height="" auto></iframe>
+                <iframe src="static/img/Michael VO.mp4" width="" height=""></iframe>
+                <iframe src="static/img/Michael VO.mp4" width="" height=""></iframe>
+                <iframe src="static/img/Michael VO.mp4" width="" height=""></iframe> -->
+
+<!--
+                <!-- {% video i.video 'medium' %}{ -->
+
+                <video controls  loop preload="metadata" poster="{% static 'img/banner2.jpg' %}" >
+                  <source  src="{% static '' %}{{i.videofile}}"  type='video/webm;codecs="vp8, vorbis"' />
+                </video>
+
+
+                 <!-- {% video i.video 'small' %}
+                {% video portfolio.video as my_video %}
+                  URL: {{ my_video.url }}
+                  Thumbnail: {{ my_video.thumbnail }}
+                  {% video my_video "large" %}
+
+                {% endvideo %} -->
+
+
+                </div>
+                <div class="member-info">
+                  <h3 class="text-secodery"> Title: {{i.title}}</h3>
+                  <span>Price: ${{i.price}}</span>
+                </div>
+              </div>
+
+              {% endfor %}
+              </div>
+            </div>
+          </section>
+
+
+<!-- End Portfolio Section -->
+
+<!--
+<a href="javascript:void(0)" id="video-trigger">Open</a>
+<div id="vidBox">
+  <div id="videCont">
+    <div id="yt_video">
+      <video autoplay loop muted playsinline id="demo" width="600" height="300">
+        <source src="{% static 'img\Logo_gif.webm' %}"
+                type='video/webm;codecs="vp8, vorbis"' />
+      </video>
+    </div>
+  </div>
+</div>
+
+
+
+ -->_
+
+
+
+
+<!-- <video src="{% static 'img\Logo_Gif.webm' % }" autoplay poster="posterimage.jpg"> -->
+
+
+
+
+{% endblock %}
