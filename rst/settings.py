@@ -25,7 +25,7 @@ SECRET_KEY = '5803a%k1imm+oh(0a-rkx2qca#vndsvjerc)c=4g*b^g4)klos'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [*]
 
 # ALLOWED_HOSTS = ['redshiftsolutions.herokuapp.com',]
 
