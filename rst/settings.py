@@ -25,7 +25,9 @@ SECRET_KEY = '5803a%k1imm+oh(0a-rkx2qca#vndsvjerc)c=4g*b^g4)klos'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-ALLOWED_HOSTS = ['ec2-54-169-26-57.ap-southeast-1.compute.amazonaws.com']
+ALLOWED_HOSTS = []
+
+# ALLOWED_HOSTS = ['ec2-54-169-26-57.ap-southeast-1.compute.amazonaws.com']
 
 # ALLOWED_HOSTS = ['redshiftsolutions.herokuapp.com',]
 

@@ -65,17 +65,21 @@
       <div class="row">
 
         <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <h1 data-aos="fade-up">Grow your business with PIXELBFRAME</h1>
-          <h2 data-aos="fade-up" data-aos-delay="400">We are team of talanted designers making websites with Bootstrap</h2>
+          <h1 data-aos="fade-up" >Grow your business with </h1>
+          <h1 class="pixel" data-aos="fade-up">PIXEL MOTION WORK</h1>
+
+          <h2 data-aos="fade-up" data-aos-delay="400">We are team of talanted motion graphics designers</h2>
           <div data-aos="fade-up" data-aos-delay="800">
             <a href="#about" class="btn-get-started scrollto">Get Started</a>
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">
           <video class="img-fluid animated" autoplay loop muted playsinline width="800" height="300">
-            <source src="{% static 'img\hdnfv-lfepv.webm' %}"
-                    type='video/webm;codecs="vp8, vorbis"' />
-          </video>
+            <!-- <source src="{% static 'img\hdnfv-lfepv.webm' %}"
+                    type='video/webm;codecs="vp8, vorbis"' /> -->
+
+                    </video>
+                    <div style="padding:30.25% 0 0 0;position:50px;"><iframe src="https://player.vimeo.com/video/276808805?loop=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
           <!-- <img src="{% static 'img/unnamed.png' %}" class="img-fluid animated" alt="" > -->
         </div>
       </div>
@@ -105,7 +109,7 @@
         <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
           <div class="icon"><i class="fas fa-laptop"></i></div>
           <h4 class="title"><a href="">Custom Logo Animation</a></h4>
-          <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+          <p class="description"></p>
         </div>
       </div>
 
@@ -113,7 +117,7 @@
         <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
           <div class="icon"><i class="fas fa-laptop"></i></div>
           <h4 class="title"><a href="">3D Product Animation</a></h4>
-          <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+          <p class="description"></p>
         </div>
       </div>
 
@@ -121,7 +125,7 @@
         <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
           <div class="icon"><i class="fas fa-laptop"></i></div>
           <h4 class="title"><a href="">Motion Graphics</a></h4>
-          <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+          <p class="description"></p>
         </div>
       </div>
 
@@ -129,7 +133,7 @@
         <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
           <div class="icon"><i class="fas fa-laptop"></i></div>
           <h4 class="title"><a href="">Lyrical Video</a></h4>
-          <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+          <p class="description"></p>
         </div>
       </div>
 
@@ -154,33 +158,32 @@
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="400">
           <!-- <img src="static/img/banner1.jpg" alt=""> -->
 
-{% for i in portfolio %}
-
           <div class="col-lg-3 col-md-6 portfolio-item filter-app">
 
-              <div class="embed-responsive embed-responsive-16by9">
-<!--
-                <iframe src="static/img/Michael VO.mp4" width="80%" height="" auto></iframe>
-                <iframe src="static/img/Michael VO.mp4" width="" height=""></iframe>
-                <iframe src="static/img/Michael VO.mp4" width="" height=""></iframe>
-                <iframe src="static/img/Michael VO.mp4" width=""onclick="this.play(); height=""></iframe> -->
-                <video controls  preload="none" poster="{% static 'img/banner2.jpg' %}" onclick="this.paused? this.play() : this.pause()" >
-                  <source  src="{% static '' %}{{i.videofile}}"  type='video/webm;codecs="vp8, vorbis"' />
-                </video>
-
-
-
-
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/397726088?loop=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+            <p><a href="https://vimeo.com/397726088">revolution chess</a> from <a href="https://vimeo.com/animationcraft">Animation_Craft</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
                 </div>
-                <div class="member-info">
-                  <h3 class="text-secodery"> Title: {{i.title}}</h3>
-                  <span>Price: ${{i.price}}</span>
-                </div>
+
+                <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+
+                  <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/397726070?loop=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                  <p><a href="https://vimeo.com/397726070">LBX</a> from <a href="https://vimeo.com/animationcraft">Animation_Craft</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+                      </div>
+
+              <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+                <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/321464842?loop=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                <p><a href="https://vimeo.com/321464842">basterds.mp4</a> from <a href="https://vimeo.com/animationcraft">Animation_Craft</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+                  </div>
+                  <div class="col-lg-3 col-md-6 portfolio-item filter-app">
+
+
+
+                  <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/397726033?loop=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<p><a href="https://vimeo.com/397726033">evan luputra</a> from <a href="https://vimeo.com/animationcraft">Animation_Craft</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
               </div>
 
-              {% endfor %}
               </div>
-            </div>
+
           </section>
 
 <!-- End Portfolio Section -->
@@ -210,7 +213,7 @@
               </div>
               <div class="member-info">
                 <h4>BharathMuguntha</h4>
-                <span>Chief Executive Officer</span>
+                <span>CEO</span>
               </div>
             </div>
           </div>

@@ -6,67 +6,46 @@
 
 {% block content %}
 
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio">
-      <div class="container">
+<!-- ======= Portfolio Section ======= -->
+<section id="portfolio" class="portfolio">
+  <div class="container">
 
-        <div class="section-title" data-aos="fade-up">
-          <h2>Portfolio</h2>
-          <hr>
-          <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem</p> -->
-        </div>
+    <div class="section-title" data-aos="fade-up">
+      <h2>Portfolio</h2>
+      <hr>
+      <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem</p> -->
+    </div>
 
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="400">
-          <!-- <img src="static/img/banner1.jpg" alt=""> -->
+    <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="400">
+      <!-- <img src="static/img/banner1.jpg" alt=""> -->
 
-          <!-- <video controls style="width:640px;height:360px;" poster="poster.png">
-            <source src="{% static 'img\Logo_gif.webm' %}"
-                    type='video/webm;codecs="vp8, vorbis"' />
-          </video> -->
+      <div class="col-lg-3 col-md-6 portfolio-item filter-app">
 
+        <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/397726088?loop=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+        <p><a href="https://vimeo.com/397726088">revolution chess</a> from <a href="https://vimeo.com/animationcraft">Animation_Craft</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+            </div>
 
+            <div class="col-lg-3 col-md-6 portfolio-item filter-app">
 
-
-{% for i in portfolio %}
+              <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/397726070?loop=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+              <p><a href="https://vimeo.com/397726070">LBX</a> from <a href="https://vimeo.com/animationcraft">Animation_Craft</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+                  </div>
 
           <div class="col-lg-3 col-md-6 portfolio-item filter-app">
-
-              <div class="embed-responsive embed-responsive-16by9">
-
-                <!-- <iframe src="{% static 'static/img/Michael VO.mp4' %}" width="80%" height="" auto></iframe>
-                <iframe src="static/img/Michael VO.mp4" width="" height=""></iframe>
-                <iframe src="static/img/Michael VO.mp4" width="" height=""></iframe>
-                <iframe src="static/img/Michael VO.mp4" width="" height=""></iframe> -->
-
-<!--
-                <!-- {% video i.video 'medium' %}{ -->
-
-                <video controls  loop preload="metadata" poster="{% static 'img/banner2.jpg' %}" >
-                  <source  src="{% static '' %}{{i.videofile}}"  type='video/webm;codecs="vp8, vorbis"' />
-                </video>
-
-
-                 <!-- {% video i.video 'small' %}
-                {% video portfolio.video as my_video %}
-                  URL: {{ my_video.url }}
-                  Thumbnail: {{ my_video.thumbnail }}
-                  {% video my_video "large" %}
-
-                {% endvideo %} -->
-
-
-                </div>
-                <div class="member-info">
-                  <h3 class="text-secodery"> Title: {{i.title}}</h3>
-                  <span>Price: ${{i.price}}</span>
-                </div>
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/321464842?loop=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+            <p><a href="https://vimeo.com/321464842">basterds.mp4</a> from <a href="https://vimeo.com/animationcraft">Animation_Craft</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
               </div>
+              <div class="col-lg-3 col-md-6 portfolio-item filter-app">
 
-              {% endfor %}
-              </div>
-            </div>
-          </section>
 
+
+              <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/397726033?loop=1" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<p><a href="https://vimeo.com/397726033">evan luputra</a> from <a href="https://vimeo.com/animationcraft">Animation_Craft</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+          </div>
+
+          </div>
+
+      </section>
 
 <!-- End Portfolio Section -->
 
