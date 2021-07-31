@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '5803a%k1imm+oh(0a-rkx2qca#vndsvjerc)c=4g*b^g4)klos'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 ALLOWED_HOSTS = ['127.0.0.1','127.0.1.1','www.pixelmotionwork.com','pixelmotionwork.com']
 
 # ALLOWED_HOSTS = ['ec2-54-169-26-57.ap-southeast-1.compute.amazonaws.com']
@@ -142,6 +142,8 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR,'rst/static')
 ]
+
+
 MEDIA_ROOT = os.path.join(BASE_DIR,'rst/static')
 MEDIA_URL = 'rst/static/'
 # STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
