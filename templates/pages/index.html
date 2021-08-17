@@ -93,32 +93,19 @@
           <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem</p> -->
         </div>
 
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="400">
-          <!-- <img src="static/img/banner1.jpg" alt=""> -->
+          <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="400">
 
+          {% for p in portfolio %}
           <div class="col-lg-6 col-md-12 portfolio-item filter-app">
-
-            <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/397726088?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-            <!-- <p><a href="https://vimeo.com/397726088">Revolution chess</a> from <a href="https://vimeo.com/animationcraft">Animation_Craft</a> on <a href="https://vimeo.com">Vimeo</a>.</p> -->
-                </div>
-
-                <div class="col-lg-6 col-md-12 portfolio-item filter-app">
-
-                  <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/397726070?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-                  <!-- <p><a href="https://vimeo.com/397726070">LBX</a> from <a href="https://vimeo.com/animationcraft">Animation_Craft</a> on <a href="https://vimeo.com">Vimeo</a>.</p> -->
-                      </div>
-
-              <div class="col-lg-6 col-md-12 portfolio-item filter-app">
-                <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/321464842?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-                  <!-- <p><a href="https://vimeo.com/321464842">basterds.mp4</a> from <a href="https://vimeo.com/animationcraft">Animation_Craft</a> on <a href="https://vimeo.com">Vimeo</a>.</p> -->
-                  </div>
-                  <div class="col-lg-6 col-md-12 portfolio-item filter-app">
+                  <div style="padding:56.25% 0 0 0;position:relative;">
+                    <iframe src={{p.videolink}} style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+                    </iframe>
+                  </div><script src="https://player.vimeo.com/api/player.js"></script>
+            </div>
+            {% endfor %}
 
 
-
-                  <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/397726033?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-                    <!-- <p><a href="https://vimeo.com/397726033">evan luputra</a> from <a href="https://vimeo.com/animationcraft">Animation_Craft</a> on <a href="https://vimeo.com">Vimeo</a>.</p> -->
-              </div>
+            </div>
 
               </div>
 
@@ -157,70 +144,16 @@
           </div>
 
           {% endfor %}
-
-          <!-- <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="200">
-              <div class="member-img">
-                <img src="{% static 'img/Suren.jpeg' %}" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Suren Rajah</h4>
-                <!-- <span>Product Manager</span> -->
               </div>
             </div>
-          </div>
-<!--
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="300">
-              <div class="member-img">
-                <img src="{% static 'img/mathu.jpeg' %}" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Pirahanthan</h4>
-                <!-- <span>CTO</span> -->
-              </div>
-            </div>
-          </div>
 
-          <!-- <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="400">
-              <div class="member-img">
-                <img src="{% static 'img/Thasi.jpeg' %}" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="icofont-twitter"></i></a>
-                  <a href=""><i class="icofont-facebook"></i></a>
-                  <a href=""><i class="icofont-instagram"></i></a>
-                  <a href=""><i class="icofont-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Thasi Rock</h4>
-                <!-- <span>Accountant</span> -->
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
     </section><!-- End Team Section -->
     <!-- <div class="lp-imageAndText-image">
     <img class="data-save-true" src="https://lp.cdnpromo.com/wp-content/uploads/2019/01/GIF2_fallback.jpg" alt="" style="display: none;">
     <video class="data-save-false" poster="https://lp.cdnpromo.com/wp-content/uploads/2019/01/GIF2_poster.jpg" playsinline="" autoplay="" loop="" muted="">
     <source src="https://lp.cdnpromo.com/wp-content/uploads/2019/01/GIF2.mp4" type="video/mp4"> <source src="https://lp.cdnpromo.com/wp-content/uploads/2019/01/GIF2.webm" type="video/webm"> </video>
     </div> -->
-      <!-- ======= Pricing Section ======= -->
+      <!-- ======= Pricing Section"https://player.vimeo.com/video/397726088?title=0&byline=0&portrait=0" st ======= -->
 <section id="pricing" class="pricing section-bg ">
   <div class="container">
 

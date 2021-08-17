@@ -4,6 +4,7 @@ from .models import Portfolio
 
 
 # Register your models here.
+admin.site.register(Portfolio)
 
 # from embed_video.admin import AdminVideoMixin
 # from .models import Portfolio

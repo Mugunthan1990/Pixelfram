@@ -14,7 +14,11 @@ def index(request):
     return render(request, 'pages/index.html',context)
 
 def about(request):
-    return render(request, 'pages/about.html')
+    team = Team.objects.all()
+    context = {
+        'team' : team
+    }
+    return render(request, 'pages/about.html' ,context)
 
 def contact(request):
     return render(request, 'pages/contact_us.html')
