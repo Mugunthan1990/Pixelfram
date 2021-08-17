@@ -15,8 +15,8 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 import os
 import json
 
-with open('/etc/config.json') as config_file:
-    config = json.load(config_file)
+# with open('/etc/config.json') as config_file:
+#     config = json.load(config_file)
 
 #import django_heroku
 
@@ -28,12 +28,14 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY =  config['SECRET_KEY']
+SECRET_KEY =  'k0r&)e)q(-3@bh43of76zrsq1a6fqaswl+_*@=(3t+7tcrxkbk'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG = False
-ALLOWED_HOSTS = ['54.255.53.103','www.pixelmotionwork.com','pixelmotionwork.com']
+DEBUG = True
+ALLOWED_HOSTS = []
+
+# ALLOWED_HOSTS = ['27.0.0.1:8000','54.255.53.103','www.pixelmotionwork.com','pixelmotionwork.com']
 
 # ALLOWED_HOSTS = ['ec2-54-169-26-57.ap-southeast-1.compute.amazonaws.com']
 
