@@ -31,13 +31,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY =  config['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-<<<<<<< HEAD
 DEBUG = False
 ALLOWED_HOSTS = ['54.255.53.103','www.pixelmotionwork.com','pixelmotionwork.com']
-=======
-DEBUG = True
-ALLOWED_HOSTS = ['127.0.0.1','127.0.1.1','www.pixelmotionwork.com','pixelmotionwork.com']
->>>>>>> 887997be905cdefaeb5b4d06838b2236aeec2289
 
 # ALLOWED_HOSTS = ['ec2-54-169-26-57.ap-southeast-1.compute.amazonaws.com']
 
