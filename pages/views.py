@@ -1,12 +1,15 @@
 from django.shortcuts import render
 from portfolio.models import Portfolio
+from .models import Team
 
 # Create your views here.
 
 def index(request):
     portfolio = Portfolio.objects.all()
+    team = Team.objects.all()
     context = {
-        'portfolio': portfolio
+        'portfolio': portfolio,
+        'team' : team
     }
     return render(request, 'pages/index.html',context)
 
