@@ -43,37 +43,20 @@
     </div>
 
     <div class="row">
+
+      {% for s in service %}
       <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
         <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-          <div class="icon"><i class="fas fa-laptop"></i></div>
-          <h4 class="title"><a href="">Custom Logo Animation</a></h4>
-          <p class="description">Give your brand logo custom movement. So, it can tell a story.</p>
-        </div>
-      </div>
+          <!-- <div id="ic1"  class="icon"><img src="{% static 'img/logo2.png' %}"  alt=""></i></div> -->
 
-      <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-        <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
           <div class="icon"><i class="fas fa-laptop"></i></div>
-          <h4 class="title"><a href="">3D Product Animation</a></h4>
-          <p class="description">3D visualization of your product will be helpful to effectively contact your customers.</p>
+          <h4 class="title"><a href="">{{s.title}}</a></h4>
+          <p class="description">{{s.description}}</p>
         </div>
       </div>
+      {% endfor %}
 
-      <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-        <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
-          <div class="icon"><i class="fas fa-laptop"></i></div>
-          <h4 class="title"><a href="">Motion Graphics</a></h4>
-          <p class="description">Tell your story through 2d animation, storyboard, parallax, product introduction, etc..</p>
-        </div>
-      </div>
 
-      <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-        <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
-          <div class="icon"><i class="fas fa-laptop"></i></div>
-          <h4 class="title"><a href="">  Lyrical Video  </a></h4>
-          <p class="description">Create stunning lyrical videos to promote your single. </p>
-        </div>
-      </div>
 
     </div>
 
@@ -124,6 +107,7 @@
         </div>
 
         <div class="row">
+
           {% for t in team %}
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="member" data-aos="fade-up" data-aos-delay="100">
@@ -166,54 +150,60 @@
     <div class="row">
 
       <div class="col-lg-4 col-md-6">
+        {% for b in basic %}
         <div class="box" data-aos="zoom-in-right" data-aos-delay="200">
-          <h3>Basic</h3>
-          <h4><sup>$</sup>95<span></span></h4>
+          <h3>{{b.title}}</h3>
+          <h4><sup>$</sup>{{b.price}}<span></span></h4>
           <ul>
-            <li>2D Clean logo animation</li>
-            <li>1080p HD</li>
-            <li>Baground Music</li>
-            <li class="na"></li>
-            <li class="na"></li>
+            <li>{{b.deliverabels1}}</li>
+            <li>{{b.deliverabels2}}</li>
+            <li>{{b.deliverabels3}}</li>
+            <li class="na">{{b.deliverabels4}}</li>
+            <li class="na">{{b.deliverabels5}}</li>
           </ul>
           <div class="btn-wrap">
             <a href="#" class="btn-buy">Buy Now</a>
           </div>
         </div>
+        {% endfor %}
       </div>
 
       <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
+        {% for s in standard %}
         <div class="box recommended" data-aos="zoom-in" data-aos-delay="100">
-          <h3>Standard</h3>
-          <h4><sup>$</sup>165<span></span></h4>
+          <h3>{{s.title}}</h3>
+          <h4><sup>$</sup>{{s.price}}<span></span></h4>
           <ul>
-            <li>Eye catching animation</li>
-            <li>Extra elements and effects</li>
-            <li>1080p HD </li>
-            <li>Background  music</li>
-            <li class="na"></li>
+            <li>{{s.deliverabels1}}</li>
+            <li>{{s.deliverabels2}}</li>
+            <li>{{s.deliverabels3}}</li>
+            <li>{{s.deliverabels4}}</li>
+            <li class="na">{{s.deliverabels5}}</li>
           </ul>
           <div class="btn-wrap">
             <a href="#" class="btn-buy">Buy Now</a>
           </div>
         </div>
+        {% endfor %}
       </div>
 
       <div class="col-lg-4 col-md-6 mt-4 mt-lg-0 ">
+        {% for p in premium %}
         <div class="box" data-aos="zoom-in-left" data-aos-delay="200">
-          <h3>Premium</h3>
-          <h4><sup>$</sup>295<span></span></h4>
+          <h3>{{p.title}}</h3>
+          <h4><sup>$</sup>{{p.price}}<span></span></h4>
           <ul>
-            <li>Complex Character animation</li>
-            <li>Extra elements and effects</li>
-            <li>1080p</li>
-            <li>Sound Effects</li>
-            <li>Background Music</li>
+            <li>{{p.deliverabels1}}</li>
+            <li>{{p.deliverabels2}}</li>
+            <li>{{p.deliverabels3}}</li>
+            <li>{{p.deliverabels4}}</li>
+            <li>{{p.deliverabels5}}</li>
           </ul>
           <div class="btn-wrap">
             <a href="#" class="btn-buy">Buy Now</a>
           </div>
         </div>
+        {% endfor %}
       </div>
 
     </div>

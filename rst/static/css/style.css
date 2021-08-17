@@ -38,8 +38,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-secondary {
   color: #fff !important; }
-
-img {
+  
+.logo img {
   margin: 0 0 0 0;
   width: 50%;
 
@@ -509,6 +509,8 @@ position: absolute;
     padding: 30px;
   }
 
+
+
   .services .icon-box {
     padding: 30px;
     position: relative;
@@ -573,6 +575,9 @@ position: absolute;
   .services .title a {
     color: #111;
   }
+
+
+
 
   .services .description {
     font-size: 15px;

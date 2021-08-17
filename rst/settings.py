@@ -46,6 +46,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'pages.apps.PagesConfig',
     'portfolio.apps.PortfolioConfig',
+    'pricing.apps.PricingConfig',
 
     'django.contrib.admin',
     'django.contrib.auth',
